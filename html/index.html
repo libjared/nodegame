@@ -1,8 +1,1 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js" integrity="sha256-fiM0lX3OYzf0FfLBeLqFuCokh+rf1VhI/eanPbzldUM=" crossorigin="anonymous"></script>
-<script>
-    var socket = io('http://localhost');
-    socket.on('news', function (data) {
-        console.log(data);
-        socket.emit('my other event', { my: 'data' });
-    });
-</script>
+<script src="bundle.js"></script>
