@@ -1,7 +1,9 @@
 import * as io from 'socket.io-client';
+import Person from "../shared/Person";
 
 const socket = io('http://localhost');
-socket.on('news', function (data) {
-    console.log(data);
-    socket.emit('my other event', { my: 'data' });
+
+socket.on('why dont you say hello', function() {
+    const user: Person = { firstName: 'Billy', lastName: 'Bob' };
+    socket.emit('give name', user);
 });
