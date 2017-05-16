@@ -1,0 +1,14 @@
+{
+  "name": "nodegame",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "libjared",
+  "description": "Evil viyda game",
+  "dependencies": {
+    "socket.io": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.18",
+    "@types/socket.io": "^1.4.29"
+  }
+}
