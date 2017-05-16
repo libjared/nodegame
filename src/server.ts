@@ -7,6 +7,8 @@ const io = socketio.listen(app);
 
 app.listen(80);
 
+console.log("Started server");
+
 io.on('connection', function(socket: SocketIO.Socket) {
     //set up listeners
     setUpListenersForNewClient(socket);
