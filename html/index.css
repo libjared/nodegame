@@ -1,0 +1,28 @@
+body {
+    background: url(https://us1.factorio.com/assets/img/stressed_linen_texture.png) repeat 0 0;
+}
+
+#main {
+    border-radius: 10px;
+    background-color: grey;
+    padding: 15px;
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#content {
+    height: 600px; /* it was 604 for some reason... */
+}
+
+#sidebar {
+    width: 100%;
+    margin: 0 5px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+#gameSurface {
+    width: 800px;
+    height: 600px;
+}

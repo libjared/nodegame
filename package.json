@@ -11,9 +11,17 @@
     "@types/node": "^7.0.18",
     "@types/socket.io": "^1.4.29",
     "browserify": "^14.3.0",
+    "browserify-shim": "^3.8.14",
+    "excalibur": "^0.10.0",
     "typescript": "^2.3.2"
   },
+  "browserify": {
+    "transform": [ "browserify-shim" ]
+  },
+  "browserify-shim": {
+    "excalibur": "global:ex"
+  },
   "scripts": {
-    "build": "tsc && browserify html/client.js -o html/bundle.js"
+    "build": "tsc && browserify html/client.js -o html/bundle.js --debug"
   }
 }
