@@ -16,8 +16,9 @@ const game = new ex.Engine({
     canvasElementId: 'gameSurface'
 });
 
-const paddle = new ex.Actor(150, game.getDrawHeight() - 40, 200, 20);
-paddle.color = ex.Color.Chartreuse;
+const paddle = new ex.Actor(32, 32, 32, 32);
+paddle.color = ex.Color.fromHex('#ff0000');
+paddle.anchor = new ex.Vector(0, 0);
 paddle.collisionType = ex.CollisionType.Fixed;
 game.input.pointers.primary.on('move', function (evt: PointerEvent) {
     paddle.pos.x = evt.x;
