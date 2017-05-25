@@ -1,5 +1,5 @@
-import Socket = SocketIO.Socket;
 import PlayerModel from "../shared/PlayerModel";
+import Socket = SocketIOClient.Socket;
 
 class Networker {
     private socket: Socket;

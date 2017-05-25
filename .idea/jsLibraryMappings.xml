@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{excalibur, socket.io, socket.io-client-DefinitelyTyped}" />
+    <file url="PROJECT" libraries="{excalibur, node-DefinitelyTyped, socket.io, socket.io-DefinitelyTyped, socket.io-client-DefinitelyTyped}" />
   </component>
 </project>
